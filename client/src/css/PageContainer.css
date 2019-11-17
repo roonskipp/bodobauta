@@ -1,0 +1,39 @@
+/* .PageContainer{
+    margin: 120px;
+    margin-top: -2px;
+    background: white;
+}
+
+.PageContainer h1{
+    display: flex;
+    color: #333333;
+    justify-content: center;
+    
+}
+
+.PageContainer p{
+    display: flex;
+    color: #333333;
+    justify-content: center;
+    
+}
+
+.PageContainer .showMoreBtn{
+    margin-top: 25px;
+    display: flex;
+    justify-content:  center;
+}
+
+.PageContainer .showMoreBtn button{
+    width: 100%;
+    height: 50px;
+    border: 0px;
+    color: white;
+}
+
+.PageContainer .showMoreBtn button:hover{
+    width: 100%;
+    height: 50px;
+    background: #ffffff;
+    color: #55d7ff;
+} */

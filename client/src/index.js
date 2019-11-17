@@ -1,10 +1,49 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+import { usePromiseTracker } from "react-promise-tracker";
+import './css/index.css';
 import App from './App';
+import Admin from './Admin';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const LoadingIndicator = props => {
+  const { promiseInProgress } = usePromiseTracker();
+  
+     return (
+        promiseInProgress
+    );  
+   }
+
+function App2(){
+  return(
+    <div>
+      <Switch>
+        <Route path="/home">
+          <App/>
+        </Route>
+        <Route path="/admin">
+          <Admin/>
+        </Route>
+      </Switch>
+    </div>
+  );
+}
+
+ReactDOM.render(
+  <Router>
+    <App2 />
+    <LoadingIndicator />
+  </Router>, 
+  document.getElementById('root')
+  );
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

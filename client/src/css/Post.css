@@ -1,0 +1,56 @@
+.Post{
+    display: flex;
+    border-radius: 5px;
+    color : #313131;
+    background-color: #cccccc;
+    border: 2px solid;
+    border-color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.Post:hover{
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #55d7ff;
+}
+
+
+.Post h3{
+    padding: 10px;
+    width: 50%;
+}
+
+.Post .UnExpanded{
+    height:10 px;
+    color: #222222;
+    /*background-image: linear-gradient(to bottom, transparent, #ffffff);*/
+}
+
+.Post .Expanded:hover{
+    background-color: red;
+}
+
+.Post .ingress{
+    width: 50%;
+    justify-content: flex-end;
+}
+
+.Post .ingress p{
+    margin-right: 7px;
+}
+
+.Post .date{
+    padding: 10px;
+    font-size: 75%;
+}
+
+.Post .author{
+    padding: 10px;
+    font-size: 75%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

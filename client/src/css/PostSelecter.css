@@ -1,0 +1,57 @@
+/* .PostSelecter{
+    max-height: 400px;
+    overflow-y: scroll;
+    max-width: 15%;
+}
+
+
+.PostSelecter button{
+    border-radius: 5px;
+    background: #555555;
+    color : white;
+    border-color: #555555;
+    width: auto;
+    font-size: 150%;
+    margin-top: 10px;
+}
+
+.PostSelecter button:hover{
+    border-radius: 5px;
+    background: #333333;
+    color : white;
+    border-color: #555555;
+    width: auto;
+    font-size: 150%;
+}
+
+.PostSelecter .EditorPost{
+    color : #23ff21;
+    background : #cccccc;
+}
+
+.PostSelecter .EditorPost:hover{
+    background: #333333;
+    pointer-events: visible;
+}
+
+.PostSelecter .EditorPost .UnExpanded{
+    height:50 px;
+    background-image: linear-gradient(to bottom, transparent, #222222);
+}
+
+.Postselcter .EditorPost .ingress{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.Postselcter .EditorPost .ingress p{
+    margin-right: 7px;
+}
+
+.Postselcter .EditorPost .date{
+    font-size: 75%;
+}
+
+.Postselcter .EditorPost .author{
+    font-size: 75%;
+} */

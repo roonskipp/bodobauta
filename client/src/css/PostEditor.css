@@ -1,0 +1,29 @@
+.PostEditor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: auto;
+    max-height: 400px;
+}
+
+.PostEditor form{
+    background-color: orange;
+}
+
+.PostEditor .ViewSelection button{
+    background-color: green;
+    max-height: 50px;
+}
+
+.PostEditor .ViewSelection{
+    display: flexbox;
+    background-color: aqua;
+}
+
+.PostEditor .EditorPost{
+    background-color: blueviolet;
+}
+
+.PostEditor p{
+    background-color: brown;
+}

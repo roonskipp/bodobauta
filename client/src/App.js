@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import PageContainer from './components/PageContainer';
+import './css/App.css'
 
-function App() {
+const App = () => {
+    const url = "http://localhost:5000/admin/";
+    fetch(url, {method: 'GET',
+                 mode: 'cors', 
+                 headers: {
+                    'Access-Control-Allow-Origin':'*',
+                    'Accept' : 'application/json',
+                    'Content-Type': 'application/json'
+                    }
+                }).catch(error => {
+                    console.log(error);
+                    //alert("GET failed")
+                }).then(
+                    res => res.json()).then(response => {
+                        //alert("Loaded ok.");
+                    }).catch(error => {
+                        console.log(error);
+                        //alert("Failure GET!");
+                    });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        <div className = "App">
+            <PageContainer />
+        </div>
   );
 }
 

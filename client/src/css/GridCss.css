@@ -1,0 +1,297 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: minmax(10px, 100px) auto minmax(10px, 100px);
+    grid-template-rows: 100px 100px 100px 100px, auto;
+}
+
+.login{
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-content: space-around;
+}
+
+.posteditor{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-columns: 100px 200px 100px;
+    grid-template-rows: auto auto 100px 100px;
+    gap: 5px;
+    border-radius: 3px;
+    background-color: #cccccc;
+}
+
+
+.posteditor .edit-or-new-buttons {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.posteditor .post-selecter {
+    height: 100%;
+    display: grid;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: scroll;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding-left: 5px;
+}
+
+.posteditor .post-selecter .list-of-editor-posts{
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    gap: 200px;
+}
+
+.list-of-editor-posts p{
+    margin: 0px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.list-of-editor-posts p:hover{
+    background-color: #cccccc;
+}
+
+.posteditor .post-form-wrapper {
+    display: grid;
+    grid-template-columns: 400px 100px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end:4;
+}
+
+
+.post-form-wrapper .post-delete-btn {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+.posteditor .post-form-wrapper .post-form{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 100px 100px 100px auto;
+    grid-template-rows: 200px auto auto auto;
+}
+
+.post-form .input-text-box{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: start;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.post-form .input-author{
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-bottom: 0px;
+    margin-right: 0px;
+}
+
+.post-form .input-headline{
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin-right: 0px;
+}
+
+.post-form .p1{
+    text-align: center;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.post-form .p2{
+    text-align: center;
+    align-self: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.post-form .input-submit-btn{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    width: 100%;
+}
+
+.header{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 50px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+.header .HeaderButtonBorder{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+.header .HeaderButtonBorder button:hover{
+    width: 100%;
+    background-color: white;
+    color: #333333;
+    align-content: center;
+    border: 3px solid;
+    border-color:#333333;
+}
+
+
+.header .HeaderButtonBorder button{
+    border: 0px;
+    background-color: #333333;
+    color : white;
+    width: 100%;
+    font-size: 150%;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.bodobauta{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.last-updates{
+    display: flex;
+    justify-content: space-evenly;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.postswrapper{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-posts-container{
+    display: grid;
+    grid-template-columns: 25px auto minmax(25px, 100px);
+    grid-template-rows: 40px, 200px, 40px;
+    border-radius: 5px;
+    color : #313131;
+    background-color: #cccccc;
+    border: 2px solid;
+    border-color: #ffffff;
+}
+
+.grid-posts-container:hover {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-color: #55d7ff;
+}
+
+
+
+.grid-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-loading {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.grid-date{
+    align-self: flex-end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid-author{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.grid-post-text-expanded{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.grid-post-text-unexpanded{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.showMoreBtn{
+    display: flex;
+    justify-content:  center;
+    margin-top: 10px;
+}
+
+.showMoreBtn button{
+    width: 50%;
+    height: 50px;
+    border: 0px;
+    color: white;
+}
+
+.showMoreBtn button:hover{
+    width: 50%;
+    height: 50px;
+    background: #ffffff;
+    color: #55d7ff;
+    border-color: #55d7ff;
+    border: 2px solid;
+}

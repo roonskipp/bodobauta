@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"node server\" \"node client\"",
     "client": "node ./client/start-client.js",
-    "server": "node ./server/server",
+    "server": "node ./server/index",
     "dev": "nodemon ./server/index",
     "startdev": "concurrently \"npm run dev\" \"npm run client\""
   },
@@ -22,10 +22,23 @@
   },
   "homepage": "https://github.com/roonskipp/bodobauta#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "react-promise-tracker": "^2.0.5",
+    "react-router-dom": "^5.1.2",
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.19.1"
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.4"
   }
 }
